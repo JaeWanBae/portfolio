@@ -6,12 +6,10 @@ app.init = () => {
     app.home();
 }
 
-
+// Carousel
 app.carousel = document.querySelector('.carousel');
 app.pages = document.querySelectorAll('.pages');
 app.counter = 0;
-
-
 
 app.nextPage = () => {
     const nextButton = document.querySelector('.nextPage');
@@ -40,5 +38,6 @@ app.home = () => {
         app.carousel.style.transform = `translateX( ${100 * app.counter}vw)`;
     })
 }
+
 
 app.init();
