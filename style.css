@@ -63,15 +63,21 @@ img {
     padding: 0;
 }
 
+h1,
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     color: rgb(255, 255, 255);
     padding-top: 40px;
 }
 
+h1,
+h2,
+i,
+p {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
 
 /* page navigation styling */
 .pageNav {
@@ -183,7 +189,6 @@ ul li button:active {
 .gridItem3 i {
     font-size: 2.5rem;
     margin-top: 70px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .myName {
@@ -194,7 +199,6 @@ h1 {
     margin-top: 70px;
     font-family: 'Merienda', cursive;
     color: rgb(255, 255 ,255);
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     font-size: 3rem;
 }
 
@@ -352,16 +356,22 @@ h1 {
 .aboutImgContainer {
     width: 50%;
     clip-path: polygon(20% 0%, 78% 0, 100% 100%, 0% 100%);
-    margin-right: 30px;
+    margin-right: 40px;
+}
+
+.aboutImgContainer img {
+    padding-top: 10px;
 }
 
 .aboutInfo {
     display: flex;
     width: 100%;
+    margin-top: 70px;
 }
 
+
 .aboutTextContainer {
-    width: calc(50%-30px)
+    width: calc(50%-40px)
 }
 
 /* project page styling */
@@ -538,6 +548,45 @@ h1 {
     transform: rotate(45deg);
     border: 3px solid rgb(255, 255, 255);
 }
+
+.contactFlex {
+    display : flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.contactFlex a {
+    color: rgb(0, 0, 0);
+}
+
+
+.social {
+    width: 40%;
+}
+
+.social ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactFlex i {
+    font-size: 1.5rem;
+}
+
+.contactFlex i:hover,
+.contactFlex i:focus,
+.contactFlex a:hover,
+.contactFlex a:focus {
+    transform: scale(1.5);
+}
+
+.formMessage {
+    width: 70%;
+    text-align: center;
+}
+
 
 /* Carousel Stuff */
 .carousel {
