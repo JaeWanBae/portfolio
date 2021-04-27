@@ -43,7 +43,7 @@ a {
 }
 
 a:visited {
-    color: rgb(255, 255, 255);
+    color: inherit;
 }
 
 .hidePages {
@@ -61,6 +61,15 @@ h3,
 img {
     margin: 0;
     padding: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
 }
 
 
@@ -101,9 +110,9 @@ ul li button:active {
     transform: rotate(45deg) scale(0.9);
 }
 
-li button i,
-li a i {
-    color: white;
+.pageNav button i,
+.pageNav a i {
+    color: rgb(255, 255, 255);
     transform: rotate(-45deg);
     margin-top: 5px;
     font-size: 0.8rem;
@@ -323,9 +332,36 @@ h1 {
     position: absolute;
     right: -100%;
     top: 0;
+}
+
+.page2,
+.aboutHeader .diamond {
     background-color: rgb(252, 205, 28);
     background-image: url(./assets/noise.png), 
-    radial-gradient(ellipse farthest-corner at center, #FDDA58 0%, #FDD43F 50%, #EBB51E 100%);
+    radial-gradient(ellipse farthest-corner at center, rgb(253,218,88) 0%, rgb(253,212,63) 50%, rgb(235,181,30) 100%);
+}
+
+.aboutHeader {
+    background-image: url(./assets/foodBackground.jpg);
+    background-size: contain;
+    position: relative;
+    height: 30%;
+    background-repeat: repeat;
+}
+
+.aboutImgContainer {
+    width: 50%;
+    clip-path: polygon(20% 0%, 78% 0, 100% 100%, 0% 100%);
+    margin-right: 30px;
+}
+
+.aboutInfo {
+    display: flex;
+    width: 100%;
+}
+
+.aboutTextContainer {
+    width: calc(50%-30px)
 }
 
 /* project page styling */
@@ -336,43 +372,49 @@ h1 {
     position: absolute;
     right: -200%;
     top: 0;
-    background-color: rgb(231,70,66);
-    background-image: url(./assets/noise.png),
-    radial-gradient(ellipse farthest-corner at center, #EE7B78 0%, #EB6561 50%, #D84642 100%);
 }
 
-.page3 h2 {
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    padding-top: 70px;
-    color: rgb(255, 255, 255);
+.page3,
+.projectHeader .diamond {
+    background-color: rgb(231,70,66);
+    background-image: url(./assets/noise.png),
+    radial-gradient(ellipse farthest-corner at center, rgb(238,123,120) 0%, rgb(235,101,97) 50%, rgb(216,70,66) 100%);
+}
+
+
+.projectHeader {
+    background-image: url(./assets/code.jpg);
+    height: 30%;
+    background-position: center;
+    position: relative;
 }
 
 .projectGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 100px repeat(2, 200px);
+    gap: 20px 20px;
     height: 775px;
-    padding: 175px 90px 0 90px;
-    gap: 10px 10px;
+    margin: 30px auto 0;
+    justify-content: center;
 }
 
 .page3 h2 { 
-    grid-area: 2 / 2 / 3 / 3; 
-    font-size: 2rem;
+    grid-area: 1 / 2 / 2 / 3; 
+    font-size: 2.5rem;
+    padding-top: 20px;
 }
 
 .project1 { 
-    grid-area: 1 / 1 / 2 / 2; 
+    grid-area: 2 / 1 / 3 / 2; 
 }
 
 .project2 { 
-    grid-area: 1 / 2 / 2 / 3; 
+    grid-area: 2 / 2 / 3 / 3; 
 }
 
 .project3 { 
-    grid-area: 1 / 3 / 2 / 4; 
+    grid-area: 2 / 3 / 3 / 4; 
 }
 
 .project4 { 
@@ -470,9 +512,31 @@ h1 {
     position: absolute;
     right: -300%;
     top: 0;
-    background-color: rgb(47,138,199);
+}
+
+.page4,
+.contactHeader .diamond {
+    background-color: rgb(212,220,241);
     background-image: url(./assets/noise.png),
-    radial-gradient(ellipse farthest-corner at center, #4BB4FA 0%, #2F8AC7 100%);
+    radial-gradient(ellipse farthest-corner at center, rgb(212,220,250) 0%, rgb(200,190,255) 100%);
+}
+
+.contactHeader {
+    height: 30%;
+    background-image: url(./assets/coffeeBackground.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.diamond {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: -25px;
+    left: calc(50% - 25px);
+    z-index: 100;
+    transform: rotate(45deg);
+    border: 3px solid rgb(255, 255, 255);
 }
 
 /* Carousel Stuff */
