@@ -475,6 +475,10 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+.project {
+    box-shadow: 5px 5px 2px rgb(0, 0, 0, 0.8);
+}
+
 .projectDesc .title {
     width: calc(90% - 30px);
     display: flex;
@@ -589,6 +593,8 @@ h1 {
 .formMessage {
     width: 70%;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
