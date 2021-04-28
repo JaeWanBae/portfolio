@@ -954,9 +954,26 @@ h1 {
     .aboutHeader,
     .projectHeader,
     .contactHeader {
-        height: 20%;
+        height: 15%;
     }
     
+    h2 {
+        font-size: 2.1rem;
+        padding-top: 40px;
+    }
+
+    .aboutImgContainer {
+        width: 20%;
+    }
+
+    .aboutTextContainer {
+        width: calc(80% - 40px);
+        margin-top: 0;
+    }
+
+    .projectGrid {
+        margin-top: 10px;
+    }
 }
 
 
