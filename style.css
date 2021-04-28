@@ -40,11 +40,9 @@ p {
 
 a {
     text-decoration: none;
-}
-
-a:visited {
     color: rgb(255, 255, 255);
 }
+
 
 .hidePages {
     width: 100vw;
