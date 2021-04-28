@@ -888,6 +888,12 @@ h1 {
         max-width: 320px;
     }
 
+    .aboutHeader,
+    .projectHeader,
+    .contactHeader {
+        height: 20%;
+    }
+
     .pageNav {
         right: 28%;
     }
@@ -897,7 +903,16 @@ h1 {
     }
 
     h2 {
-        font-size: 2.3rem;
+        padding-top: 40px;
+        font-size: 1.8rem;
+    }
+
+    .aboutInfo {
+        margin-top: 20px;
+    }
+
+    .aboutTextContainer p {
+        font-size: 0.7rem;
     }
 
     .skills i {
