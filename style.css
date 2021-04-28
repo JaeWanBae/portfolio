@@ -894,6 +894,12 @@ h1 {
         height: 20%;
     }
 
+    .about button,
+    .projects button,
+    .contact button {
+        top: 32%;
+    }
+
     .pageNav {
         right: 28%;
     }
