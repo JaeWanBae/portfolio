@@ -690,7 +690,7 @@ h1 {
         height: 90%;
         scroll-snap-type: x mandatory;
         grid-template-columns: repeat(2, 47%);
-        grid-template-rows: repeat(3, 250px);
+        grid-template-rows: repeat(3, 225px);
     }
 
     .project1 { 
